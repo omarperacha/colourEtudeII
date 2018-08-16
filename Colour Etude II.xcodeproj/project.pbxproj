@@ -42,6 +42,7 @@
 		599E782E1E5F8BAD001C0749 /* Toy Piano Fnat7 A3.aif in Resources */ = {isa = PBXBuildFile; fileRef = 599E781A1E5F8BAD001C0749 /* Toy Piano Fnat7 A3.aif */; };
 		599E782F1E5F8BAD001C0749 /* Toy Piano G+6 F3.aif in Resources */ = {isa = PBXBuildFile; fileRef = 599E781B1E5F8BAD001C0749 /* Toy Piano G+6 F3.aif */; };
 		599E78301E5F8BAD001C0749 /* Toy Piano Gnat6 F3.aif in Resources */ = {isa = PBXBuildFile; fileRef = 599E781C1E5F8BAD001C0749 /* Toy Piano Gnat6 F3.aif */; };
+		59C31971212607E3004E29E4 /* Soundscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C31970212607E3004E29E4 /* Soundscape.swift */; };
 		882E4DDD6EAD1E6F927DD445 /* Pods_Colour_Etude_II.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8065E4C8E94C3A7828B089EB /* Pods_Colour_Etude_II.framework */; };
 		9BD98E60B871EC424C7CADA6 /* Pods_Colour_Etude_IIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE469DA0E4C4C341B40E20 /* Pods_Colour_Etude_IIUITests.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,7 @@
 		599E781A1E5F8BAD001C0749 /* Toy Piano Fnat7 A3.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Toy Piano Fnat7 A3.aif"; sourceTree = "<group>"; };
 		599E781B1E5F8BAD001C0749 /* Toy Piano G+6 F3.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Toy Piano G+6 F3.aif"; sourceTree = "<group>"; };
 		599E781C1E5F8BAD001C0749 /* Toy Piano Gnat6 F3.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Toy Piano Gnat6 F3.aif"; sourceTree = "<group>"; };
+		59C31970212607E3004E29E4 /* Soundscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundscape.swift; sourceTree = "<group>"; };
 		7C4FAD77DA1620C387A24442 /* Pods-Colour Etude IIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colour Etude IIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Colour Etude IIUITests/Pods-Colour Etude IIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8065E4C8E94C3A7828B089EB /* Pods_Colour_Etude_II.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colour_Etude_II.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8123726F0030FD19EADE426B /* Pods_Colour_Etude_IITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colour_Etude_IITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 				59683A891E63BAA1001B1AB5 /* singleton.swift */,
 				599B72C31E4A51E900EFFAB8 /* AppDelegate.swift */,
 				599B72C51E4A51E900EFFAB8 /* ViewController.swift */,
+				59C31970212607E3004E29E4 /* Soundscape.swift */,
 				59683A811E639900001B1AB5 /* VolumeViewController.swift */,
 				599E78071E5F8BAD001C0749 /* Sounds */,
 				599B72C71E4A51E900EFFAB8 /* Main.storyboard */,
@@ -341,7 +344,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.InterAppAudio = {
 								enabled = 0;
@@ -500,6 +503,7 @@
 				599B72C61E4A51E900EFFAB8 /* ViewController.swift in Sources */,
 				59683A8A1E63BAA1001B1AB5 /* singleton.swift in Sources */,
 				599B72C41E4A51E900EFFAB8 /* AppDelegate.swift in Sources */,
+				59C31971212607E3004E29E4 /* Soundscape.swift in Sources */,
 				59683A821E639900001B1AB5 /* VolumeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

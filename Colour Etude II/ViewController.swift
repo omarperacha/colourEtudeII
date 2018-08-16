@@ -259,59 +259,13 @@ class ViewController: UIViewController {
     var cState = 0
     let borderWidth = 0.25
     
-    //all fsynths (10)
-    let fsynth = AKOscillator()
-    let fsynth2 = AKOscillator()
-    let fsynth3 = AKOscillator()
-    let fsynth4 = AKOscillator()
-    let fsynth5 = AKOscillator()
-    let fsynth6 = AKOscillator()
-    let fsynth7 = AKOscillator()
-    let fsynth8 = AKOscillator()
-    let fsynth9 = AKOscillator()
-    let fsynth10 = AKOscillator()
+    //soundscapes
+    var fScape = Soundscape()
+    var cScape = Soundscape()
     
-    //allftrems
-    var ftrem : AKTremolo!
-    var ftrem2 : AKTremolo!
-    var ftrem3 : AKTremolo!
-    var ftrem4 : AKTremolo!
-    var ftrem5 : AKTremolo!
-    var ftrem6 : AKTremolo!
-    var ftrem7 : AKTremolo!
-    var ftrem8 : AKTremolo!
-    var ftrem9 : AKTremolo!
-    var ftrem10 : AKTremolo!
+    let cFreqs = [269.604, 355.445, 445.693, 496.254, 658.234, 785.295, 993.867, 1061.493, 1115.973, 1195.437, 1334.1, 1593.32, 2659.323]
     
-    //allcsynths (13)
-    let csynth = AKOscillator()
-    let csynth2 = AKOscillator()
-    let csynth3 = AKOscillator()
-    let csynth4 = AKOscillator()
-    let csynth5 = AKOscillator()
-    let csynth6 = AKOscillator()
-    let csynth7 = AKOscillator()
-    let csynth8 = AKOscillator()
-    let csynth9 = AKOscillator()
-    let csynth10 = AKOscillator()
-    let csynth11 = AKOscillator()
-    let csynth12 = AKOscillator()
-    let csynth13 = AKOscillator()
-    
-    //allctrems
-    var ctrem : AKTremolo!
-    var ctrem2 : AKTremolo!
-    var ctrem3 : AKTremolo!
-    var ctrem4 : AKTremolo!
-    var ctrem5 : AKTremolo!
-    var ctrem6 : AKTremolo!
-    var ctrem7 : AKTremolo!
-    var ctrem8 : AKTremolo!
-    var ctrem9 : AKTremolo!
-    var ctrem10 : AKTremolo!
-    var ctrem11 : AKTremolo!
-    var ctrem12 : AKTremolo!
-    var ctrem13 : AKTremolo!
+    let fFreqs = [360.0, 2153.82, 1064.81, 830.274, 933.586, 732.632, 479.151, 639.861, 1998.707, 785.991]
     
     //samplers
     var cSampler = AKAppleSampler()
@@ -346,7 +300,6 @@ class ViewController: UIViewController {
     var fEnv: AKAmplitudeEnvelope!
     var rev: AKReverb!
 
-    
     
     //mixers
     var finalMix = AKMixer()
@@ -531,151 +484,14 @@ class ViewController: UIViewController {
         self.c12Button.layer.borderWidth = CGFloat(borderWidth)
         self.c12Button.layer.borderColor = UIColor.lightGray.cgColor
         
-        //set up C synths
-        csynth.frequency = 269.604
-        csynth.amplitude = 0.3
-        ctrem = AKTremolo(self.csynth, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem.start()
+        //set up soundscapes
+        cScape.setup(freqs: cFreqs)
+        fScape.setup(freqs: fFreqs)
         
-        csynth2.frequency = 355.445
-        csynth2.amplitude = 0.3
-        ctrem2 = AKTremolo(self.csynth2, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem2.start()
+        //attach scapes to mixer and envelope
+        cScape.attachToMixer(mixer: ctremMix)
+        fScape.attachToMixer(mixer: ftremMix)
         
-        csynth3.frequency = 445.693
-        csynth3.amplitude = 0.3
-        ctrem3 = AKTremolo(self.csynth3, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem3.start()
-        
-        csynth4.frequency = 496.254
-        csynth4.amplitude = 0.3
-        ctrem4 = AKTremolo(self.csynth4, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem4.start()
-        
-        csynth5.frequency = 658.234
-        csynth5.amplitude = 0.3
-        ctrem5 = AKTremolo(self.csynth5, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem5.start()
-        
-        csynth6.frequency = 785.295
-        csynth6.amplitude = 0.3
-        ctrem6 = AKTremolo(self.csynth6, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem6.start()
-        
-        csynth7.frequency = 993.867
-        csynth7.amplitude = 0.3
-        ctrem7 = AKTremolo(self.csynth7, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem7.start()
-        
-        csynth8.frequency = 1061.493
-        csynth8.amplitude = 0.3
-        ctrem8 = AKTremolo(self.csynth8, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem8.start()
-        
-        csynth9.frequency = 1115.973
-        csynth9.amplitude = 0.3
-        ctrem9 = AKTremolo(self.csynth9, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem9.start()
-        
-        csynth10.frequency = 1195.437
-        csynth10.amplitude = 0.3
-        ctrem10 = AKTremolo(self.csynth10, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem10.start()
-        
-        csynth11.frequency = 1334.1
-        csynth11.amplitude = 0.3
-        ctrem11 = AKTremolo(self.csynth11, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem11.start()
-        
-        csynth12.frequency = 1593.32
-        csynth12.amplitude = 0.2
-        ctrem12 = AKTremolo(self.csynth12, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem12.start()
-        
-        csynth13.frequency = 2659.323
-        csynth13.amplitude = 0.2
-        ctrem13 = AKTremolo(self.csynth13, frequency: random(in: 0.02...0.05), depth: 0.6, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ctrem13.start()
-        
-    
-        //set up F synths
-        fsynth.frequency = 360
-        fsynth.amplitude = 0.3
-        ftrem = AKTremolo(self.fsynth, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem.start()
-        
-        fsynth2.frequency = 2153.82
-        fsynth2.amplitude = 0.2
-        ftrem2 = AKTremolo(self.fsynth2, frequency: random(in: 0.02...0.05), depth: 0.6, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem2.start()
-        
-        fsynth3.frequency = 1064.81
-        fsynth3.amplitude = 0.3
-        ftrem3 = AKTremolo(self.fsynth3, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem3.start()
-        
-        fsynth4.frequency = 830.274
-        fsynth4.amplitude = 0.3
-        ftrem4 = AKTremolo(self.fsynth4, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem4.start()
-        
-        fsynth5.frequency = 933.586
-        fsynth5.amplitude = 0.3
-        ftrem5 = AKTremolo(self.fsynth5, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem5.start()
-        
-        fsynth6.frequency = 732.632
-        fsynth6.amplitude = 0.3
-        ftrem6 = AKTremolo(self.fsynth6, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem6.start()
-        
-        fsynth7.frequency = 479.151
-        fsynth7.amplitude = 0.3
-        ftrem7 = AKTremolo(self.fsynth7, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem7.start()
-        
-        fsynth8.frequency = 1998.707
-        fsynth8.amplitude = 0.2
-        ftrem8 = AKTremolo(self.fsynth8, frequency: random(in: 0.02...0.05), depth: 0.6, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem8.start()
-        
-        fsynth9.frequency = 639.861
-        fsynth9.amplitude = 0.3
-        ftrem9 = AKTremolo(self.fsynth9, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem9.start()
-        
-        fsynth10.frequency = 639.861
-        fsynth10.amplitude = 0.3
-        ftrem10 = AKTremolo(self.fsynth10, frequency: random(in: 0.02...0.05), depth: 0.7, waveform: AKTable(.positiveSine, phase: Float(randomFloat())))
-        ftrem10.start()
-        
-        fsynth.start()
-        fsynth2.start()
-        fsynth3.start()
-        fsynth4.start()
-        fsynth5.start()
-        fsynth6.start()
-        fsynth7.start()
-        fsynth8.start()
-        fsynth9.start()
-        fsynth10.start()
-        
-        csynth.start()
-        csynth2.start()
-        csynth3.start()
-        csynth4.start()
-        csynth5.start()
-        csynth6.start()
-        csynth7.start()
-        csynth8.start()
-        csynth9.start()
-        csynth10.start()
-        csynth11.start()
-        csynth12.start()
-        csynth13.start()
-        
-        ctremMix = AKMixer(ctrem, ctrem2, ctrem3, ctrem4, ctrem5, ctrem6, ctrem7, ctrem8, ctrem9, ctrem10, ctrem11, ctrem12, ctrem13)
-        ftremMix = AKMixer(ftrem, ftrem2, ftrem3, ftrem4, ftrem5, ftrem6, ftrem7, ftrem8, ftrem9, ftrem10)
         
         cEnv = AKAmplitudeEnvelope(ctremMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
         fEnv = AKAmplitudeEnvelope(ftremMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
@@ -688,13 +504,10 @@ class ViewController: UIViewController {
         }
     
         vcSingleton.changeScape = ssSet
-    
- 
         
         envMix.volume = vcSingleton.sSVol
         
         rev = AKReverb(envMix, dryWetMix: 1)
-        rev.start()
         
         
         samplerMix = AKMixer(cSampler, fSampler, xSampler)
@@ -713,73 +526,27 @@ class ViewController: UIViewController {
         
         vcSingleton.changeSamp = sampSet
         
-        
-        samplerMix.start()
         samplerMix.volume = vcSingleton.singletonSampVol
         
         finalMix = AKMixer(rev, samplerMix)
-        finalMix.start()
         
         AudioKit.output = finalMix
         do{
             try
             AudioKit.start()
         } catch{print("error")}
+        
+        //start soundscapes
+        cScape.start()
+        fScape.start()
+        
+        rev.start()
+        
     }
     
     func reset(){
-        //set up C synths
-        ctrem.start()
-        ctrem2.start()
-        ctrem3.start()
-        ctrem4.start()
-        ctrem5.start()
-        ctrem6.start()
-        ctrem7.start()
-        ctrem8.start()
-        ctrem9.start()
-        ctrem10.start()
-        ctrem11.start()
-        ctrem12.start()
-        ctrem13.start()
-        
-        
-        //set up F synths
-        ftrem.start()
-        ftrem2.start()
-        ftrem3.start()
-        ftrem4.start()
-        ftrem5.start()
-        ftrem6.start()
-        ftrem7.start()
-        ftrem8.start()
-        ftrem9.start()
-        ftrem10.start()
-        
-        fsynth.start()
-        fsynth2.start()
-        fsynth3.start()
-        fsynth4.start()
-        fsynth5.start()
-        fsynth6.start()
-        fsynth7.start()
-        fsynth8.start()
-        fsynth9.start()
-        fsynth10.start()
-        
-        csynth.start()
-        csynth2.start()
-        csynth3.start()
-        csynth4.start()
-        csynth5.start()
-        csynth6.start()
-        csynth7.start()
-        csynth8.start()
-        csynth9.start()
-        csynth10.start()
-        csynth11.start()
-        csynth12.start()
-        csynth13.start()
+        //set up Soundscapes
+       
         
         //MARK - Re -Initialise Audiofiles cSampler//
         do {cC3 = try AKAudioFile(readFileName: "Toy Piano F+4 C3.aif")} catch {print("cC3 messed up")}
@@ -856,14 +623,13 @@ class ViewController: UIViewController {
                 print("xsampler messed up")
             }}
         
-        rev.start()
-        samplerMix.start()
-        finalMix.start()
         
         AudioKit.output = finalMix
         do{
             try AudioKit.start()
         } catch{print("error")}
+        
+        rev.start()
         
         if fState == 1{
             fEnv.start()
