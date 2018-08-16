@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lora-Bold.ttf">
+            <string>Lora-Bold</string>
+        </array>
+        <array key="Lora-Regular.ttf">
+            <string>Lora-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colour_Etude_II" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CE II background.png" translatesAutoresizingMaskIntoConstraints="NO" id="weE-hI-1kG">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48v-Dy-Vby">
+                                <rect key="frame" x="130" y="94" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.41222853943600024" green="0.22834376442012694" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="48v-Dy-Vby" secondAttribute="height" multiplier="1:1" id="RH2-wo-9qF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="34"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfm-O9-4WX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stN-c6-Dy7">
+                                <rect key="frame" x="467" y="94" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.15666425200256362" blue="0.26581551266152614" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="stN-c6-Dy7" secondAttribute="height" multiplier="1:1" id="QYk-AK-gEt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="34"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egh-iv-HLw"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbJ-IH-3yS">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="94"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5j-N7-OQH">
+                                <rect key="frame" x="340" y="0.0" width="327" height="219"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colour Etude II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOP-TF-RtV">
+                                <rect key="frame" x="0.0" y="11" width="667" height="36"/>
+                                <fontDescription key="fontDescription" name="Lora-Regular" family="Lora" pointSize="29"/>
+                                <color key="textColor" red="0.36428541922822877" green="0.30106141321623414" blue="0.40089168848167545" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEd-JB-n6W">
+                                <rect key="frame" x="98" y="0.0" width="317" height="11"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFQ-Rk-hTF">
+                                <rect key="frame" x="0.0" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.12616431726637897" green="0.059079377982133648" blue="0.27746645942408377" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="F">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="5">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF1:" destination="BYZ-38-t0r" eventType="touchDown" id="WQb-8H-6h3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBg-4L-QOg">
+                                <rect key="frame" x="52" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.13239731853716813" green="0.074550263062643923" blue="0.297039241844543" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF2:" destination="BYZ-38-t0r" eventType="touchDown" id="GSw-nc-cri"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-hb-Dba">
+                                <rect key="frame" x="104" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.14900479819546542" green="0.083901600317907124" blue="0.33429885722915842" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="E">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="d">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-LightOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF3:" destination="BYZ-38-t0r" eventType="touchDown" id="1f2-wX-REQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MFw-gu-oQs">
+                                <rect key="frame" x="156" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.15924607731808207" green="0.089668258291986117" blue="0.35727562004967128" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="F">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF4:" destination="BYZ-38-t0r" eventType="touchDown" id="boH-DV-4hz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m71-XS-JTD">
+                                <rect key="frame" x="208" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.17564819566877674" green="0.098903960731727233" blue="0.39407449825479945" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="G6">
+                                    <color key="titleColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF5:" destination="BYZ-38-t0r" eventType="touchDown" id="TBS-4C-8ul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eco-BM-zb1">
+                                <rect key="frame" x="260" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.19120834242973073" green="0.10469463709241383" blue="0.43355767137692303" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="A">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-LightOblique"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF6:" destination="BYZ-38-t0r" eventType="touchDown" id="mhE-jf-wxG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a0-MI-nwN">
+                                <rect key="frame" x="312" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.21363047947576555" green="0.11697170341201588" blue="0.48439901753076919" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="A6">
+                                    <color key="titleColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF7:" destination="BYZ-38-t0r" eventType="touchDown" id="P1s-RF-Dk3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9Z-xy-twK">
+                                <rect key="frame" x="364" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.23094623542936218" green="0.12645281057766602" blue="0.52366183804358979" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-LightOblique"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF8:" destination="BYZ-38-t0r" eventType="touchDown" id="SHl-wq-Uqb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Oo-ozJ">
+                                <rect key="frame" x="416" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.25365991326441162" green="0.13888950778322032" blue="0.57516424188974358" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="B6">
+                                    <color key="titleColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayNoteF9:" destination="BYZ-38-t0r" eventType="touchDown" id="6Zp-7j-XO7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wcv-I5-2qv">
+                                <rect key="frame" x="468" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.2738115659838779" green="0.14992338811222436" blue="0.62085735086410254" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="C">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Avenir-BookOblique"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF10:" destination="BYZ-38-t0r" eventType="touchDown" id="d3A-uh-Ujy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVU-Bc-Taw">
+                                <rect key="frame" x="520" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.29673727348366519" green="0.16247618050756213" blue="0.67284052394102556" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-LightOblique"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF11:" destination="BYZ-38-t0r" eventType="touchDown" id="Hgm-Ab-HhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5N-hk-Uoa">
+                                <rect key="frame" x="572" y="219" width="52" height="72"/>
+                                <color key="backgroundColor" red="0.33529133418850998" green="0.1835861558498566" blue="0.76026039573589743" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="E">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-LightOblique"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF12:" destination="BYZ-38-t0r" eventType="touchDown" id="YXm-NY-GxV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-Dq-7Nr">
+                                <rect key="frame" x="624" y="219" width="43" height="72"/>
+                                <color key="backgroundColor" red="0.36795273712751336" green="0.20146965237608544" blue="0.83431888932564102" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="F7">
+                                    <color key="titleColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteF13:" destination="BYZ-38-t0r" eventType="touchDown" id="vP0-6o-IWI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOh-4n-BuX">
+                                <rect key="frame" x="0.0" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.1737090384083857" blue="0.23212896155078933" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="F">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="4">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC1:" destination="BYZ-38-t0r" eventType="touchDown" id="ikR-0C-lHZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJF-ud-Cyu">
+                                <rect key="frame" x="56" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.89296874999999998" green="0.15503371457630846" blue="0.21362134957283879" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73639921948370435" green="0.82321528349335216" blue="0.84721554487179485" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73639921948370435" green="0.82321528349335216" blue="0.84721554487179485" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-LightOblique"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73639921948370435" green="0.82321528349335216" blue="0.84721554487179485" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC2:" destination="BYZ-38-t0r" eventType="touchDown" id="gUk-Sn-gJp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJI-V2-LGe">
+                                <rect key="frame" x="112" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.84278846153846154" green="0.14632161068834715" blue="0.20161691947032043" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC3:" destination="BYZ-38-t0r" eventType="touchDown" id="JSQ-PF-C6G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lP6-N8-HuX">
+                                <rect key="frame" x="168" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.78078926282051286" green="0.1355575541880516" blue="0.18678509864505324" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="E6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC4:" destination="BYZ-38-t0r" eventType="touchDown" id="AOa-8k-TKI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-Mg-jAM">
+                                <rect key="frame" x="224" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.7395432692307693" green="0.12839658735958356" blue="0.17691798424142638" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="G">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC5:" destination="BYZ-38-t0r" eventType="touchDown" id="gcW-j0-fT0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-A8-y7C">
+                                <rect key="frame" x="280" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.70430689102564104" green="0.12227898626620073" blue="0.16848852613750229" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="A">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-LightOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC6:" destination="BYZ-38-t0r" eventType="touchDown" id="GnK-6z-XhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-6m-N0j">
+                                <rect key="frame" x="336" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.67620192307692306" green="0.11739951251178565" blue="0.16176508684255886" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-LightOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC7:" destination="BYZ-38-t0r" eventType="touchDown" id="Y3d-JZ-Vc4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CoO-uW-NrY">
+                                <rect key="frame" x="392" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.64142628205128205" green="0.11136190279142602" blue="0.15344584905494532" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC8:" destination="BYZ-38-t0r" eventType="touchDown" id="AqU-K6-Gj3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-VR-OmZ">
+                                <rect key="frame" x="448" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.62782451923076921" green="0.10900041834434987" blue="0.15019195362995133" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="b">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-LightOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC9:" destination="BYZ-38-t0r" eventType="touchDown" id="8FM-V1-zf1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-vq-L4W">
+                                <rect key="frame" x="504" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.6030649038153848" green="0.10358073077208106" blue="0.15449068479790526" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73725490196078436" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC10:" destination="BYZ-38-t0r" eventType="touchDown" id="ZBe-8K-D0J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IER-wt-0Gg">
+                                <rect key="frame" x="560" y="297" width="56" height="72"/>
+                                <color key="backgroundColor" red="0.57005208330256418" green="0.098473186399946733" blue="0.14123228269937257" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="‡">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-BookOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC11:" destination="BYZ-38-t0r" eventType="touchDown" id="hvd-ZX-QGP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-Ky-Cf7">
+                                <rect key="frame" x="616" y="297" width="51" height="72"/>
+                                <color key="backgroundColor" red="0.5" green="0.09075232422074897" blue="0.13296360254153206" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="E7">
+                                            <attributes>
+                                                <color key="NSColor" red="0.73333333333333328" green="0.81568627450980391" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playNoteC12:" destination="BYZ-38-t0r" eventType="touchDown" id="0eU-hf-X9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-pN-aBS">
+                                <rect key="frame" x="16" y="20.5" width="24.5" height="24.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7pX-pN-aBS" secondAttribute="height" multiplier="1:1" id="CUU-8e-YZt"/>
+                                </constraints>
+                                <state key="normal" image="Settings Filled-50.png">
+                                    <color key="titleColor" red="0.88237179487179485" green="0.88237179487179485" blue="0.88237179487179485" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bl3-Gv-ZTw" kind="presentation" modalPresentationStyle="overFullScreen" id="fX5-UH-Ayo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="48v-Dy-Vby" firstAttribute="trailing" secondItem="OOP-TF-RtV" secondAttribute="centerX" multiplier="0.6" id="08q-CX-olx"/>
+                            <constraint firstItem="o9Z-xy-twK" firstAttribute="leading" secondItem="0a0-MI-nwN" secondAttribute="trailing" id="0Gz-RO-uXe"/>
+                            <constraint firstItem="MCo-Ky-Cf7" firstAttribute="leading" secondItem="IER-wt-0Gg" secondAttribute="trailing" id="0aC-E0-cxD"/>
+                            <constraint firstItem="LZC-VR-OmZ" firstAttribute="width" secondItem="CoO-uW-NrY" secondAttribute="width" id="20Z-vM-BAK"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Pd-nK-e3R"/>
+                            <constraint firstItem="HbJ-IH-3yS" firstAttribute="height" secondItem="weE-hI-1kG" secondAttribute="height" multiplier="0.25" id="334-Aw-ahs"/>
+                            <constraint firstItem="HbJ-IH-3yS" firstAttribute="top" secondItem="7pX-pN-aBS" secondAttribute="top" constant="-20.25" id="3YP-HO-cC2"/>
+                            <constraint firstItem="wXZ-6m-N0j" firstAttribute="leading" secondItem="8ZR-A8-y7C" secondAttribute="trailing" id="43T-N6-AWq"/>
+                            <constraint firstItem="a6G-vq-L4W" firstAttribute="leading" secondItem="LZC-VR-OmZ" secondAttribute="trailing" id="4fs-Qc-0xT"/>
+                            <constraint firstItem="MJF-ud-Cyu" firstAttribute="width" secondItem="nOh-4n-BuX" secondAttribute="width" id="5BI-b9-7nP"/>
+                            <constraint firstItem="UVU-Bc-Taw" firstAttribute="height" secondItem="Wcv-I5-2qv" secondAttribute="height" id="5gD-Mx-6cA"/>
+                            <constraint firstItem="MCo-Ky-Cf7" firstAttribute="trailing" secondItem="weE-hI-1kG" secondAttribute="trailing" id="6gQ-aV-YJM"/>
+                            <constraint firstItem="uYo-hb-Dba" firstAttribute="height" secondItem="UBg-4L-QOg" secondAttribute="height" id="6wR-3F-4aa"/>
+                            <constraint firstItem="a6G-vq-L4W" firstAttribute="centerY" secondItem="LZC-VR-OmZ" secondAttribute="centerY" id="7Ng-pW-MZU"/>
+                            <constraint firstItem="iFQ-Rk-hTF" firstAttribute="top" secondItem="p5j-N7-OQH" secondAttribute="bottom" id="841-Ir-WCN"/>
+                            <constraint firstItem="QEd-JB-n6W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="98" id="8x8-l3-DgG"/>
+                            <constraint firstItem="LZC-VR-OmZ" firstAttribute="centerY" secondItem="CoO-uW-NrY" secondAttribute="centerY" id="9FO-qN-ueV"/>
+                            <constraint firstItem="48v-Dy-Vby" firstAttribute="width" secondItem="weE-hI-1kG" secondAttribute="height" multiplier="125:667" id="9o7-BB-VMt"/>
+                            <constraint firstItem="0YO-Mg-jAM" firstAttribute="centerY" secondItem="lP6-N8-HuX" secondAttribute="centerY" id="AJs-Oa-18O"/>
+                            <constraint firstItem="7pX-pN-aBS" firstAttribute="width" secondItem="48v-Dy-Vby" secondAttribute="width" multiplier="0.35" id="AXs-6o-liL"/>
+                            <constraint firstAttribute="trailing" secondItem="QEd-JB-n6W" secondAttribute="trailing" constant="252" id="Ado-ex-rut"/>
+                            <constraint firstItem="I5N-hk-Uoa" firstAttribute="leading" secondItem="UVU-Bc-Taw" secondAttribute="trailing" id="AoR-iZ-eec"/>
+                            <constraint firstItem="UVU-Bc-Taw" firstAttribute="centerY" secondItem="Wcv-I5-2qv" secondAttribute="centerY" id="BFs-BH-jRd"/>
+                            <constraint firstItem="gyP-Oo-ozJ" firstAttribute="height" secondItem="o9Z-xy-twK" secondAttribute="height" id="Bvf-je-zZl"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="leading" secondItem="iFQ-Rk-hTF" secondAttribute="leading" id="Ck2-vD-qeR"/>
+                            <constraint firstItem="OOP-TF-RtV" firstAttribute="width" secondItem="weE-hI-1kG" secondAttribute="width" id="DiM-Ke-epP"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dyi-cL-0zO"/>
+                            <constraint firstItem="UcZ-Dq-7Nr" firstAttribute="height" secondItem="I5N-hk-Uoa" secondAttribute="height" id="EG3-0H-74x"/>
+                            <constraint firstItem="0a0-MI-nwN" firstAttribute="centerY" secondItem="eco-BM-zb1" secondAttribute="centerY" id="EXj-PJ-1RT"/>
+                            <constraint firstItem="p5j-N7-OQH" firstAttribute="height" secondItem="weE-hI-1kG" secondAttribute="height" multiplier="0.585" id="FpX-zq-4me"/>
+                            <constraint firstItem="MCo-Ky-Cf7" firstAttribute="centerY" secondItem="IER-wt-0Gg" secondAttribute="centerY" id="GXf-PO-3lN"/>
+                            <constraint firstItem="lP6-N8-HuX" firstAttribute="height" secondItem="eJI-V2-LGe" secondAttribute="height" id="GZJ-N7-dn3"/>
+                            <constraint firstItem="CoO-uW-NrY" firstAttribute="width" secondItem="wXZ-6m-N0j" secondAttribute="width" id="Gys-H1-DDA"/>
+                            <constraint firstItem="gyP-Oo-ozJ" firstAttribute="leading" secondItem="o9Z-xy-twK" secondAttribute="trailing" id="HOQ-45-gzN"/>
+                            <constraint firstItem="LZC-VR-OmZ" firstAttribute="height" secondItem="CoO-uW-NrY" secondAttribute="height" id="HVN-bg-PH4"/>
+                            <constraint firstItem="0YO-Mg-jAM" firstAttribute="width" secondItem="lP6-N8-HuX" secondAttribute="width" id="Hb0-vq-rs2"/>
+                            <constraint firstItem="a6G-vq-L4W" firstAttribute="height" secondItem="LZC-VR-OmZ" secondAttribute="height" id="HcQ-zs-3uT"/>
+                            <constraint firstItem="0YO-Mg-jAM" firstAttribute="leading" secondItem="lP6-N8-HuX" secondAttribute="trailing" id="Hii-bW-eIL"/>
+                            <constraint firstItem="gyP-Oo-ozJ" firstAttribute="centerY" secondItem="o9Z-xy-twK" secondAttribute="centerY" id="HsV-6m-Wlh"/>
+                            <constraint firstItem="8ZR-A8-y7C" firstAttribute="height" secondItem="0YO-Mg-jAM" secondAttribute="height" id="IT0-Sh-AA4"/>
+                            <constraint firstItem="eJI-V2-LGe" firstAttribute="height" secondItem="MJF-ud-Cyu" secondAttribute="height" id="Ijb-zR-J4V"/>
+                            <constraint firstItem="eco-BM-zb1" firstAttribute="width" secondItem="m71-XS-JTD" secondAttribute="width" id="Ivf-CU-M5a"/>
+                            <constraint firstItem="uYo-hb-Dba" firstAttribute="leading" secondItem="UBg-4L-QOg" secondAttribute="trailing" id="J1l-za-lBp"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="top" secondItem="QEd-JB-n6W" secondAttribute="top" id="JT2-qw-42g"/>
+                            <constraint firstItem="MJF-ud-Cyu" firstAttribute="height" secondItem="nOh-4n-BuX" secondAttribute="height" id="JYb-DB-Zaz"/>
+                            <constraint firstItem="o9Z-xy-twK" firstAttribute="height" secondItem="0a0-MI-nwN" secondAttribute="height" id="KV4-sr-gGX"/>
+                            <constraint firstItem="nOh-4n-BuX" firstAttribute="height" secondItem="iFQ-Rk-hTF" secondAttribute="height" id="KjL-rU-pme"/>
+                            <constraint firstItem="a6G-vq-L4W" firstAttribute="width" secondItem="LZC-VR-OmZ" secondAttribute="width" id="Kpe-L7-ckg"/>
+                            <constraint firstItem="0YO-Mg-jAM" firstAttribute="height" secondItem="lP6-N8-HuX" secondAttribute="height" id="MWN-7j-xXd"/>
+                            <constraint firstItem="wXZ-6m-N0j" firstAttribute="height" secondItem="8ZR-A8-y7C" secondAttribute="height" id="NWv-m0-fvU"/>
+                            <constraint firstItem="m71-XS-JTD" firstAttribute="height" secondItem="MFw-gu-oQs" secondAttribute="height" id="OB0-Ql-Zne"/>
+                            <constraint firstItem="QEd-JB-n6W" firstAttribute="leading" secondItem="HbJ-IH-3yS" secondAttribute="trailing" constant="34" id="Oah-b8-b46"/>
+                            <constraint firstItem="IER-wt-0Gg" firstAttribute="height" secondItem="a6G-vq-L4W" secondAttribute="height" id="Q7Y-c7-Z6q"/>
+                            <constraint firstItem="CoO-uW-NrY" firstAttribute="height" secondItem="wXZ-6m-N0j" secondAttribute="height" id="QSn-Nk-kgy"/>
+                            <constraint firstItem="eco-BM-zb1" firstAttribute="height" secondItem="m71-XS-JTD" secondAttribute="height" id="RNH-Vk-YCO"/>
+                            <constraint firstItem="IER-wt-0Gg" firstAttribute="centerY" secondItem="a6G-vq-L4W" secondAttribute="centerY" id="S35-xD-iRS"/>
+                            <constraint firstItem="LZC-VR-OmZ" firstAttribute="leading" secondItem="CoO-uW-NrY" secondAttribute="trailing" id="SY6-zD-gm9"/>
+                            <constraint firstItem="0a0-MI-nwN" firstAttribute="leading" secondItem="eco-BM-zb1" secondAttribute="trailing" id="TKX-Wu-lXA"/>
+                            <constraint firstItem="UBg-4L-QOg" firstAttribute="height" secondItem="iFQ-Rk-hTF" secondAttribute="height" id="TVO-a7-srp"/>
+                            <constraint firstItem="MJF-ud-Cyu" firstAttribute="leading" secondItem="nOh-4n-BuX" secondAttribute="trailing" id="U7q-vY-jSQ"/>
+                            <constraint firstItem="m71-XS-JTD" firstAttribute="leading" secondItem="MFw-gu-oQs" secondAttribute="trailing" id="UXg-Vx-3qU"/>
+                            <constraint firstItem="gyP-Oo-ozJ" firstAttribute="width" secondItem="o9Z-xy-twK" secondAttribute="width" id="UeN-B5-d3A"/>
+                            <constraint firstItem="IER-wt-0Gg" firstAttribute="width" secondItem="a6G-vq-L4W" secondAttribute="width" id="V6z-VO-6Y4"/>
+                            <constraint firstItem="UcZ-Dq-7Nr" firstAttribute="centerY" secondItem="I5N-hk-Uoa" secondAttribute="centerY" id="VCc-4h-Z6m"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="top" secondItem="p5j-N7-OQH" secondAttribute="top" id="Vf7-6U-Py2"/>
+                            <constraint firstItem="uYo-hb-Dba" firstAttribute="width" secondItem="UBg-4L-QOg" secondAttribute="width" id="Vh0-TE-6h3"/>
+                            <constraint firstItem="Wcv-I5-2qv" firstAttribute="centerY" secondItem="gyP-Oo-ozJ" secondAttribute="centerY" id="WK8-0J-hUk"/>
+                            <constraint firstItem="I5N-hk-Uoa" firstAttribute="width" secondItem="UVU-Bc-Taw" secondAttribute="width" id="Wcw-0p-odW"/>
+                            <constraint firstItem="UBg-4L-QOg" firstAttribute="leading" secondItem="iFQ-Rk-hTF" secondAttribute="trailing" id="X6w-XZ-0Dx"/>
+                            <constraint firstItem="lP6-N8-HuX" firstAttribute="width" secondItem="eJI-V2-LGe" secondAttribute="width" id="XPw-88-5FH"/>
+                            <constraint firstItem="MJF-ud-Cyu" firstAttribute="centerY" secondItem="nOh-4n-BuX" secondAttribute="centerY" id="Xi0-ib-6Zy"/>
+                            <constraint firstItem="stN-c6-Dy7" firstAttribute="width" secondItem="weE-hI-1kG" secondAttribute="height" multiplier="125:667" id="Xon-cK-etg"/>
+                            <constraint firstItem="p5j-N7-OQH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="340" id="aNF-NR-TWp"/>
+                            <constraint firstItem="MFw-gu-oQs" firstAttribute="leading" secondItem="uYo-hb-Dba" secondAttribute="trailing" id="aOE-bz-9ZG"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="centerX" secondItem="OOP-TF-RtV" secondAttribute="centerX" id="adJ-AF-TRr"/>
+                            <constraint firstItem="Wcv-I5-2qv" firstAttribute="width" secondItem="gyP-Oo-ozJ" secondAttribute="width" id="aur-Bx-Ozk"/>
+                            <constraint firstItem="CoO-uW-NrY" firstAttribute="centerY" secondItem="wXZ-6m-N0j" secondAttribute="centerY" id="bNT-Eq-KlS"/>
+                            <constraint firstItem="MCo-Ky-Cf7" firstAttribute="height" secondItem="IER-wt-0Gg" secondAttribute="height" id="c8y-jq-61Y"/>
+                            <constraint firstItem="eJI-V2-LGe" firstAttribute="leading" secondItem="MJF-ud-Cyu" secondAttribute="trailing" id="dDy-wd-J2q"/>
+                            <constraint firstAttribute="trailing" secondItem="weE-hI-1kG" secondAttribute="trailing" id="dca-Ux-0gu"/>
+                            <constraint firstItem="IER-wt-0Gg" firstAttribute="leading" secondItem="a6G-vq-L4W" secondAttribute="trailing" id="eBF-oB-YcU"/>
+                            <constraint firstItem="UcZ-Dq-7Nr" firstAttribute="leading" secondItem="I5N-hk-Uoa" secondAttribute="trailing" id="eEo-gN-gqN"/>
+                            <constraint firstItem="lP6-N8-HuX" firstAttribute="leading" secondItem="eJI-V2-LGe" secondAttribute="trailing" id="fXA-RZ-Ifl"/>
+                            <constraint firstItem="Wcv-I5-2qv" firstAttribute="leading" secondItem="gyP-Oo-ozJ" secondAttribute="trailing" id="ftY-jE-ZPs"/>
+                            <constraint firstItem="0a0-MI-nwN" firstAttribute="height" secondItem="eco-BM-zb1" secondAttribute="height" id="fxy-mA-rsr"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="top" secondItem="HbJ-IH-3yS" secondAttribute="top" id="gT8-Dq-q3M"/>
+                            <constraint firstItem="I5N-hk-Uoa" firstAttribute="centerY" secondItem="UVU-Bc-Taw" secondAttribute="centerY" id="h5d-pU-dmT"/>
+                            <constraint firstItem="CoO-uW-NrY" firstAttribute="leading" secondItem="wXZ-6m-N0j" secondAttribute="trailing" id="hV0-4I-yh4"/>
+                            <constraint firstItem="stN-c6-Dy7" firstAttribute="top" secondItem="HbJ-IH-3yS" secondAttribute="bottom" id="hzV-PG-qUh"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="leading" secondItem="HbJ-IH-3yS" secondAttribute="leading" id="i1t-aq-22T"/>
+                            <constraint firstItem="QEd-JB-n6W" firstAttribute="height" secondItem="weE-hI-1kG" secondAttribute="height" multiplier="0.03" id="i8e-ul-njl"/>
+                            <constraint firstItem="iFQ-Rk-hTF" firstAttribute="height" secondItem="weE-hI-1kG" secondAttribute="height" multiplier="0.19" id="iCk-r0-huv"/>
+                            <constraint firstItem="UcZ-Dq-7Nr" firstAttribute="trailing" secondItem="weE-hI-1kG" secondAttribute="trailing" id="iIx-6N-Tng"/>
+                            <constraint firstItem="UBg-4L-QOg" firstAttribute="width" secondItem="iFQ-Rk-hTF" secondAttribute="width" id="iRL-Fi-M50"/>
+                            <constraint firstItem="MFw-gu-oQs" firstAttribute="height" secondItem="uYo-hb-Dba" secondAttribute="height" id="iUV-y1-pJ7"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="leading" secondItem="nOh-4n-BuX" secondAttribute="leading" id="ilJ-hT-0GX"/>
+                            <constraint firstItem="MFw-gu-oQs" firstAttribute="centerY" secondItem="uYo-hb-Dba" secondAttribute="centerY" id="j0P-pt-soU"/>
+                            <constraint firstItem="o9Z-xy-twK" firstAttribute="centerY" secondItem="0a0-MI-nwN" secondAttribute="centerY" id="jcz-XF-yH9"/>
+                            <constraint firstItem="eJI-V2-LGe" firstAttribute="centerY" secondItem="MJF-ud-Cyu" secondAttribute="centerY" id="jvT-A0-5fC"/>
+                            <constraint firstItem="8ZR-A8-y7C" firstAttribute="leading" secondItem="0YO-Mg-jAM" secondAttribute="trailing" id="lKP-B0-rcD"/>
+                            <constraint firstItem="nOh-4n-BuX" firstAttribute="top" secondItem="iFQ-Rk-hTF" secondAttribute="bottom" multiplier="1.02175" id="mYQ-y8-iPu"/>
+                            <constraint firstItem="8ZR-A8-y7C" firstAttribute="width" secondItem="0YO-Mg-jAM" secondAttribute="width" id="mfN-7v-e5g"/>
+                            <constraint firstItem="m71-XS-JTD" firstAttribute="centerY" secondItem="MFw-gu-oQs" secondAttribute="centerY" id="mfQ-nL-z0Y"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="trailing" secondItem="p5j-N7-OQH" secondAttribute="trailing" id="oCr-2X-ZPf"/>
+                            <constraint firstItem="eco-BM-zb1" firstAttribute="leading" secondItem="m71-XS-JTD" secondAttribute="trailing" id="oJf-hl-gcc"/>
+                            <constraint firstItem="OOP-TF-RtV" firstAttribute="top" secondItem="QEd-JB-n6W" secondAttribute="bottom" id="oR8-Dn-Cco"/>
+                            <constraint firstItem="wXZ-6m-N0j" firstAttribute="width" secondItem="8ZR-A8-y7C" secondAttribute="width" id="p19-WG-Xeh"/>
+                            <constraint firstItem="eco-BM-zb1" firstAttribute="centerY" secondItem="m71-XS-JTD" secondAttribute="centerY" id="prz-hd-6qz"/>
+                            <constraint firstItem="MFw-gu-oQs" firstAttribute="width" secondItem="uYo-hb-Dba" secondAttribute="width" id="qs0-Ho-vNX"/>
+                            <constraint firstItem="UVU-Bc-Taw" firstAttribute="leading" secondItem="Wcv-I5-2qv" secondAttribute="trailing" id="sCC-Q6-v9a"/>
+                            <constraint firstItem="o9Z-xy-twK" firstAttribute="width" secondItem="0a0-MI-nwN" secondAttribute="width" id="sbH-v0-weW"/>
+                            <constraint firstItem="UBg-4L-QOg" firstAttribute="top" secondItem="p5j-N7-OQH" secondAttribute="bottom" id="ssZ-C7-XOF"/>
+                            <constraint firstItem="stN-c6-Dy7" firstAttribute="leading" secondItem="OOP-TF-RtV" secondAttribute="centerX" multiplier="1.4" id="tFj-2A-jcm"/>
+                            <constraint firstItem="nOh-4n-BuX" firstAttribute="width" secondItem="weE-hI-1kG" secondAttribute="width" multiplier="1:12" id="tLy-QA-2UJ"/>
+                            <constraint firstItem="uYo-hb-Dba" firstAttribute="top" secondItem="p5j-N7-OQH" secondAttribute="bottom" id="vNa-R2-Cum"/>
+                            <constraint firstItem="7pX-pN-aBS" firstAttribute="leading" secondItem="HbJ-IH-3yS" secondAttribute="leading" constant="16" id="vOW-6v-ORL"/>
+                            <constraint firstItem="0a0-MI-nwN" firstAttribute="width" secondItem="eco-BM-zb1" secondAttribute="width" id="vzD-If-VLg"/>
+                            <constraint firstItem="lP6-N8-HuX" firstAttribute="centerY" secondItem="eJI-V2-LGe" secondAttribute="centerY" id="w74-ep-Zug"/>
+                            <constraint firstItem="I5N-hk-Uoa" firstAttribute="height" secondItem="UVU-Bc-Taw" secondAttribute="height" id="wBX-u0-Wex"/>
+                            <constraint firstItem="UVU-Bc-Taw" firstAttribute="width" secondItem="Wcv-I5-2qv" secondAttribute="width" id="wBg-vt-lkJ"/>
+                            <constraint firstItem="48v-Dy-Vby" firstAttribute="top" secondItem="HbJ-IH-3yS" secondAttribute="bottom" id="wR3-eL-fwt"/>
+                            <constraint firstItem="m71-XS-JTD" firstAttribute="width" secondItem="MFw-gu-oQs" secondAttribute="width" id="wa3-Ab-ACv"/>
+                            <constraint firstItem="weE-hI-1kG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="xqk-j3-8Lt"/>
+                            <constraint firstItem="iFQ-Rk-hTF" firstAttribute="width" secondItem="weE-hI-1kG" secondAttribute="width" multiplier="1:13" id="yHq-w4-L1D"/>
+                            <constraint firstItem="8ZR-A8-y7C" firstAttribute="centerY" secondItem="0YO-Mg-jAM" secondAttribute="centerY" id="yZm-x8-YQm"/>
+                            <constraint firstItem="eJI-V2-LGe" firstAttribute="width" secondItem="MJF-ud-Cyu" secondAttribute="width" id="zDF-dM-BIK"/>
+                            <constraint firstItem="Wcv-I5-2qv" firstAttribute="height" secondItem="gyP-Oo-ozJ" secondAttribute="height" id="zVO-bI-KUh"/>
+                            <constraint firstItem="wXZ-6m-N0j" firstAttribute="centerY" secondItem="8ZR-A8-y7C" secondAttribute="centerY" id="zhN-Xj-gbN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="c10Button" destination="a6G-vq-L4W" id="DCZ-ML-gQI"/>
+                        <outlet property="c11Button" destination="IER-wt-0Gg" id="LO4-Sh-HHM"/>
+                        <outlet property="c12Button" destination="MCo-Ky-Cf7" id="nJq-4d-ZbA"/>
+                        <outlet property="c1Button" destination="nOh-4n-BuX" id="Ayi-Vd-XIN"/>
+                        <outlet property="c2Button" destination="MJF-ud-Cyu" id="PtM-W5-OaG"/>
+                        <outlet property="c3Button" destination="eJI-V2-LGe" id="rsQ-it-8AB"/>
+                        <outlet property="c4Button" destination="lP6-N8-HuX" id="H9q-fM-8ex"/>
+                        <outlet property="c5Button" destination="0YO-Mg-jAM" id="WTq-Zo-Y7k"/>
+                        <outlet property="c6Button" destination="8ZR-A8-y7C" id="CNL-2v-P8f"/>
+                        <outlet property="c7Button" destination="wXZ-6m-N0j" id="Aj2-J9-aBH"/>
+                        <outlet property="c8Button" destination="CoO-uW-NrY" id="Ase-qv-TyR"/>
+                        <outlet property="c9Button" destination="LZC-VR-OmZ" id="McY-B4-wRr"/>
+                        <outlet property="cButton" destination="stN-c6-Dy7" id="GOq-Sn-3c9"/>
+                        <outlet property="f10Button" destination="Wcv-I5-2qv" id="eGo-T5-BRB"/>
+                        <outlet property="f11Button" destination="UVU-Bc-Taw" id="Cac-fN-394"/>
+                        <outlet property="f12Button" destination="I5N-hk-Uoa" id="HyJ-tC-gg1"/>
+                        <outlet property="f13Button" destination="UcZ-Dq-7Nr" id="uLR-Nq-Oh7"/>
+                        <outlet property="f1Button" destination="iFQ-Rk-hTF" id="ySN-jC-wkb"/>
+                        <outlet property="f2Button" destination="UBg-4L-QOg" id="Q0e-lX-7e4"/>
+                        <outlet property="f3Button" destination="uYo-hb-Dba" id="uzf-2f-cwg"/>
+                        <outlet property="f4Button" destination="MFw-gu-oQs" id="BCx-6v-TL4"/>
+                        <outlet property="f5Button" destination="m71-XS-JTD" id="HTJ-ht-W4k"/>
+                        <outlet property="f6Button" destination="eco-BM-zb1" id="1Yx-xU-H8g"/>
+                        <outlet property="f7Button" destination="0a0-MI-nwN" id="4Fa-Yr-u1X"/>
+                        <outlet property="f8Button" destination="o9Z-xy-twK" id="Lvu-jy-24y"/>
+                        <outlet property="f9Button" destination="gyP-Oo-ozJ" id="uJb-GU-1a3"/>
+                        <outlet property="fButton" destination="48v-Dy-Vby" id="Acq-9i-sK9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Volume View Controller-->
+        <scene sceneID="eXq-dD-oj0">
+            <objects>
+                <viewController id="Bl3-Gv-ZTw" customClass="VolumeViewController" customModule="Colour_Etude_II" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cRV-qh-9hR"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAi-D0-v6b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UOz-r1-uYI">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CE II background.png" translatesAutoresizingMaskIntoConstraints="NO" id="iKv-XE-i7h">
+                                <rect key="frame" x="0.0" y="0.0" width="674" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR8-Ib-PXM">
+                                <rect key="frame" x="6" y="10" width="39" height="39"/>
+                                <color key="backgroundColor" red="0.62128989621925923" green="0.65897435897435896" blue="0.61874998012015747" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GR8-Ib-PXM" secondAttribute="height" multiplier="1:1" id="0td-2E-51z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.37647058823529411" green="0.2291356680723011" blue="0.36542364884746253" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="Bl3-Gv-ZTw" eventType="touchUpInside" id="o2R-XO-3IQ"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="22.25" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-v3-cuA">
+                                <rect key="frame" x="154" y="248" width="359" height="31"/>
+                                <color key="tintColor" red="0.98106971160000001" green="0.15856804390000001" blue="0.164272734" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="samplerVolChange:" destination="Bl3-Gv-ZTw" eventType="valueChanged" id="lM7-I4-Cmi"/>
+                                </connections>
+                            </slider>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBo-lJ-Efo">
+                                <rect key="frame" x="645" y="0.0" width="19" height="248"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOM-NT-sLB">
+                                <rect key="frame" x="531" y="0.0" width="67" height="113"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soundscape Volume" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dx-ZE-Xaz">
+                                <rect key="frame" x="235" y="79" width="197" height="26"/>
+                                <fontDescription key="fontDescription" name="Lora-Regular" family="Lora" pointSize="21"/>
+                                <color key="textColor" red="0.41423964379091616" green="0.27806220634679218" blue="0.42103365384615388" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sampler Volume" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFb-Te-kfP">
+                                <rect key="frame" x="253" y="286" width="160" height="26"/>
+                                <fontDescription key="fontDescription" name="Lora-Regular" family="Lora" pointSize="21"/>
+                                <color key="textColor" red="0.98106971156153844" green="0.15856804387986564" blue="0.16427273396376324" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.16500000000000001" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="625-b8-kh1">
+                                <rect key="frame" x="154" y="113" width="359" height="31"/>
+                                <color key="tintColor" red="0.4142396438" green="0.2780622063" blue="0.42103365380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="is8-BT-gnp"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="soundscapeVolChange:" destination="Bl3-Gv-ZTw" eventType="valueChanged" id="1r9-7q-lVU"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="n6g-v3-cuA" firstAttribute="centerX" secondItem="UOz-r1-uYI" secondAttribute="centerX" id="13b-9S-Pgk"/>
+                            <constraint firstItem="iKv-XE-i7h" firstAttribute="leading" secondItem="UOz-r1-uYI" secondAttribute="leading" id="1K6-QU-YdO"/>
+                            <constraint firstItem="n6g-v3-cuA" firstAttribute="top" secondItem="JBo-lJ-Efo" secondAttribute="bottom" id="6b1-E7-Oqe"/>
+                            <constraint firstItem="SFb-Te-kfP" firstAttribute="centerX" secondItem="n6g-v3-cuA" secondAttribute="centerX" id="6xQ-6G-uvS"/>
+                            <constraint firstItem="GR8-Ib-PXM" firstAttribute="width" secondItem="iKv-XE-i7h" secondAttribute="width" multiplier="25:667" constant="13.737631184407796" id="8HM-oj-cee"/>
+                            <constraint firstItem="JBo-lJ-Efo" firstAttribute="trailing" secondItem="iKv-XE-i7h" secondAttribute="trailing" constant="-10" id="9st-Na-LAp"/>
+                            <constraint firstItem="JBo-lJ-Efo" firstAttribute="height" secondItem="iKv-XE-i7h" secondAttribute="height" multiplier="0.66" id="CUR-dq-QJW"/>
+                            <constraint firstItem="JBo-lJ-Efo" firstAttribute="top" secondItem="fOM-NT-sLB" secondAttribute="top" id="J3b-cB-Xmp"/>
+                            <constraint firstItem="iKv-XE-i7h" firstAttribute="leading" secondItem="GR8-Ib-PXM" secondAttribute="leading" constant="-6" id="Jbr-Ep-1lU"/>
+                            <constraint firstItem="n6g-v3-cuA" firstAttribute="leading" secondItem="625-b8-kh1" secondAttribute="leading" id="KUk-BR-bWa"/>
+                            <constraint firstItem="JBo-lJ-Efo" firstAttribute="leading" secondItem="fOM-NT-sLB" secondAttribute="trailing" constant="47" id="Kfa-4C-gt4"/>
+                            <constraint firstItem="n6g-v3-cuA" firstAttribute="width" secondItem="625-b8-kh1" secondAttribute="width" id="MDV-Tg-PRW"/>
+                            <constraint firstItem="iKv-XE-i7h" firstAttribute="bottom" secondItem="tAi-D0-v6b" secondAttribute="top" id="SoB-fI-uEE"/>
+                            <constraint firstItem="fOM-NT-sLB" firstAttribute="leading" secondItem="UOz-r1-uYI" secondAttribute="leading" constant="531" id="T8n-Al-kJP"/>
+                            <constraint firstItem="fOM-NT-sLB" firstAttribute="height" secondItem="iKv-XE-i7h" secondAttribute="height" multiplier="0.3" id="Vpt-dz-469"/>
+                            <constraint firstItem="fOM-NT-sLB" firstAttribute="top" secondItem="iKv-XE-i7h" secondAttribute="top" id="XCU-5s-ZnH"/>
+                            <constraint firstItem="625-b8-kh1" firstAttribute="centerX" secondItem="iKv-XE-i7h" secondAttribute="centerX" constant="-4" id="YaL-xH-tYq"/>
+                            <constraint firstItem="9Dx-ZE-Xaz" firstAttribute="centerX" secondItem="625-b8-kh1" secondAttribute="centerX" id="b0Q-ok-F4k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fOM-NT-sLB" secondAttribute="trailing" constant="49" id="eI7-MX-aXl"/>
+                            <constraint firstItem="iKv-XE-i7h" firstAttribute="top" secondItem="GR8-Ib-PXM" secondAttribute="top" constant="-10" id="hkO-a3-AKy"/>
+                            <constraint firstItem="625-b8-kh1" firstAttribute="top" secondItem="9Dx-ZE-Xaz" secondAttribute="bottom" constant="8.5" id="nCY-xX-nC8"/>
+                            <constraint firstItem="SFb-Te-kfP" firstAttribute="top" secondItem="n6g-v3-cuA" secondAttribute="bottom" constant="8.5" id="oL6-CP-ajm"/>
+                            <constraint firstItem="iKv-XE-i7h" firstAttribute="top" secondItem="UOz-r1-uYI" secondAttribute="top" id="rpC-QN-yl5"/>
+                            <constraint firstItem="625-b8-kh1" firstAttribute="top" secondItem="fOM-NT-sLB" secondAttribute="bottom" id="s9k-Dw-y4v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sampVolSlider" destination="n6g-v3-cuA" id="Xo5-MM-RNK"/>
+                        <outlet property="sounscapeVolSlider" destination="625-b8-kh1" id="Pcp-pX-Fc1"/>
+                        <outlet property="xButton" destination="GR8-Ib-PXM" id="I0O-EV-Si5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dB-q7-Xg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38230884557723" y="980"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CE II background.png" width="167" height="167"/>
+        <image name="Settings Filled-50.png" width="50" height="50"/>
+    </resources>
+</document>
