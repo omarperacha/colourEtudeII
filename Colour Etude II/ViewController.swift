@@ -303,8 +303,8 @@ class ViewController: UIViewController {
     
     //mixers
     var finalMix = AKMixer()
-    var ctremMix = AKMixer()
-    var ftremMix = AKMixer()
+    var cScapeMix = AKMixer()
+    var fScapeMix = AKMixer()
     var envMix = AKMixer()
     var samplerMix = AKMixer()
 
@@ -489,12 +489,12 @@ class ViewController: UIViewController {
         fScape.setup(freqs: fFreqs)
         
         //attach scapes to mixer and envelope
-        cScape.attachToMixer(mixer: ctremMix)
-        fScape.attachToMixer(mixer: ftremMix)
+        cScape.attachToMixer(mixer: cScapeMix)
+        fScape.attachToMixer(mixer: fScapeMix)
         
         
-        cEnv = AKAmplitudeEnvelope(ctremMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
-        fEnv = AKAmplitudeEnvelope(ftremMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
+        cEnv = AKAmplitudeEnvelope(cScapeMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
+        fEnv = AKAmplitudeEnvelope(fScapeMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
         
         envMix = AKMixer(cEnv, fEnv)
         
@@ -628,6 +628,10 @@ class ViewController: UIViewController {
         do{
             try AudioKit.start()
         } catch{print("error")}
+        
+        //start soundscapes
+        cScape.start()
+        fScape.start()
         
         rev.start()
         

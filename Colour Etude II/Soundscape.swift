@@ -12,20 +12,22 @@ import AudioKit
 
 class Soundscape {
  
-    var partials = [AKOscillator()]
+    var partials = [AKOperationGenerator]()
     
     var isStarted = false
     
     func setup(freqs: [Double]){
         for i in freqs{
-            partials.append(AKOscillator(waveform: AKTable(.positiveSine, phase: 0), frequency: i, amplitude: 0.3))
+            partials.append(
+                AKOperationGenerator{ _ in
+                    return AKOperation.sineWave(frequency: i, amplitude: randomAmp())}
+            )
         }
     }
     
     func start(){
         for i in 0..<(partials.count){
             partials[i].start()
-            print(i)
         }
         isStarted = true
     }
@@ -43,7 +45,12 @@ class Soundscape {
         }
     }
     
-    func randomFloat() -> Double {
-        return random(in: 0.01...1)
+    func randomFloat() -> Float {
+        return Float(random(in: 0.05...0.2))
+    }
+    
+    func randomAmp() -> AKOperation {
+        let lfo = AKOperation.randomVertexPulse(minimum: 0, maximum: 1, updateFrequency: randomFloat())
+        return lfo
     }
 }
