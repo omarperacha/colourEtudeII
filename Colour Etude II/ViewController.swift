@@ -265,7 +265,7 @@ class ViewController: UIViewController {
     
     let cFreqs = [269.604, 355.445, 445.693, 496.254, 658.234, 785.295, 993.867, 1061.493, 1115.973, 1195.437, 1334.1, 1593.32, 2659.323]
     
-    let fFreqs = [360.0, 2153.82, 1064.81, 830.274, 933.586, 732.632, 479.151, 639.861, 1998.707, 785.991]
+    let fFreqs = [360.0, 479.151, 639.861, 732.632, 785.991, 830.274, 933.586, 1064.81, 1998.707, 2153.82]
     
     //samplers
     var cSampler = AKAppleSampler()
@@ -298,6 +298,8 @@ class ViewController: UIViewController {
     //envelopes & reverb
     var cEnv: AKAmplitudeEnvelope!
     var fEnv: AKAmplitudeEnvelope!
+    var EQ = AKEqualizerFilter()
+    var Filter = AKLowPassFilter()
     var rev: AKReverb!
 
     
@@ -493,8 +495,8 @@ class ViewController: UIViewController {
         fScape.attachToMixer(mixer: fScapeMix)
         
         
-        cEnv = AKAmplitudeEnvelope(cScapeMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
-        fEnv = AKAmplitudeEnvelope(fScapeMix, attackDuration: 2, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
+        cEnv = AKAmplitudeEnvelope(cScapeMix, attackDuration: 2.5, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
+        fEnv = AKAmplitudeEnvelope(fScapeMix, attackDuration: 4, decayDuration: 0.1, sustainLevel: 1, releaseDuration: 0.8)
         
         envMix = AKMixer(cEnv, fEnv)
         
@@ -507,7 +509,11 @@ class ViewController: UIViewController {
         
         envMix.volume = vcSingleton.sSVol
         
-        rev = AKReverb(envMix, dryWetMix: 1)
+        EQ = AKEqualizerFilter(envMix, centerFrequency: 1000, bandwidth: 200, gain: 0.8)
+        
+        Filter = AKLowPassFilter(EQ, cutoffFrequency: 1500)
+        
+        rev = AKReverb(Filter, dryWetMix: 1)
         
         
         samplerMix = AKMixer(cSampler, fSampler, xSampler)
@@ -546,6 +552,14 @@ class ViewController: UIViewController {
     
     func reset(){
         //set up Soundscapes
+        cScape.stop()
+        fScape.stop()
+        
+        cScapeMix.detach()
+        fScapeMix.detach()
+        
+        cScape.attachToMixer(mixer: cScapeMix)
+        fScape.attachToMixer(mixer: fScapeMix)
        
         
         //MARK - Re -Initialise Audiofiles cSampler//
@@ -701,14 +715,25 @@ class ViewController: UIViewController {
             fButton.layer.borderColor = UIColor.black.cgColor
     }
     
-    //MARK make VolumeViewController updates take effect
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    func makePulsing() {
+        cScape.changeAmpTypePulse(freqs: cFreqs, mixer: cScapeMix)
+        fScape.changeAmpTypePulse(freqs: fFreqs, mixer: fScapeMix)
+    }
+    
+    func makeSmooth() {
+        cScape.changeAmpTypeSmooth(freqs: cFreqs, mixer: cScapeMix)
+        fScape.changeAmpTypeSmooth(freqs: fFreqs, mixer: fScapeMix)
+    }
+    
+    func makeMixed() {
+        cScape.changeAmpTypeMixed(freqs: cFreqs, mixer: cScapeMix)
+        fScape.changeAmpTypeMixed(freqs: fFreqs, mixer: fScapeMix)
+    }
+    
 }
 
