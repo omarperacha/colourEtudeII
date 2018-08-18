@@ -12,15 +12,18 @@ import AudioKit
 import Foundation
 import AVFoundation
 
+var smoothGloabal = true
+var pulsingGlobal = false
+var mixedGlobal = false
 
 var soundScapeVolumeGlobal = 0.165
 var samplerVolumeGlobal = 15.0
 
 let vcSingleton = Singleton()
+var Conductor : ViewController?
 
 
-class ViewController: UIViewController {
-    
+class ViewController: UIViewController{
     
     let bundle = Bundle.main
 
@@ -322,6 +325,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
         NotificationCenter.default.addObserver(self, selector: #selector(self.audioRouteChangeListener(notification:)), name: NSNotification.Name.AVAudioSessionRouteChange, object: nil)
+        
+        Conductor = self
         
         AKSettings.playbackWhileMuted = true
 
@@ -725,7 +730,7 @@ class ViewController: UIViewController {
         fScape.changeAmpTypePulse(freqs: fFreqs, mixer: fScapeMix)
     }
     
-    func makeSmooth() {
+    func makeSmoothed() {
         cScape.changeAmpTypeSmooth(freqs: cFreqs, mixer: cScapeMix)
         fScape.changeAmpTypeSmooth(freqs: fFreqs, mixer: fScapeMix)
     }

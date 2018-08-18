@@ -12,6 +12,12 @@ class VolumeViewController: UIViewController {
 
     @IBOutlet weak var xButton: UIButton!
     
+    @IBOutlet weak var smoothButton: UIButton!
+    
+    @IBOutlet weak var pulseButton: UIButton!
+    
+    @IBOutlet weak var mixButton: UIButton!
+    
     let step: Float = 1.5
     
     override func viewDidLoad() {
@@ -25,6 +31,20 @@ class VolumeViewController: UIViewController {
         self.xButton.layer.cornerRadius = 5
         self.xButton.layer.borderWidth = 0.5
         self.xButton.layer.borderColor = UIColor.lightGray.cgColor
+        
+        self.smoothButton.layer.cornerRadius = 5
+        self.smoothButton.layer.borderWidth = 1
+        self.smoothButton.layer.borderColor = UIColor.white.cgColor
+        smoothButton.setTitleColor(.white, for: .normal)
+
+        
+        self.pulseButton.layer.cornerRadius = 5
+        self.pulseButton.layer.borderWidth = 1
+        self.pulseButton.layer.borderColor = UIColor.gray.cgColor
+        
+        self.mixButton.layer.cornerRadius = 5
+        self.mixButton.layer.borderWidth = 1
+        self.mixButton.layer.borderColor = UIColor.gray.cgColor
     }
     
     @IBAction func dismiss(_ sender: Any) {
@@ -52,15 +72,45 @@ class VolumeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func makeSmooth(_ sender: Any) {
+        Conductor!.makeSmoothed()
+        
+        smoothButton.layer.borderColor = UIColor.white.cgColor
+        smoothButton.setTitleColor(.white, for: .normal)
+        
+        mixButton.layer.borderColor = UIColor.gray.cgColor
+        mixButton.setTitleColor(.black, for: .normal)
+        
+        pulseButton.layer.borderColor = UIColor.gray.cgColor
+        pulseButton.setTitleColor(.black, for: .normal)
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    @IBAction func makePulse(_ sender: Any) {
+        Conductor!.makePulsing()
+        
+        smoothButton.layer.borderColor = UIColor.gray.cgColor
+        smoothButton.setTitleColor(.black, for: .normal)
+        
+        mixButton.layer.borderColor = UIColor.gray.cgColor
+        mixButton.setTitleColor(.black, for: .normal)
+        
+        pulseButton.layer.borderColor = UIColor.white.cgColor
+        pulseButton.setTitleColor(.white, for: .normal)
+    }
+    
+    @IBAction func makeMix(_ sender: Any) {
+        Conductor!.makeMixed()
+        
+        smoothButton.layer.borderColor = UIColor.gray.cgColor
+        smoothButton.setTitleColor(.black, for: .normal)
+        
+        mixButton.layer.borderColor = UIColor.white.cgColor
+        mixButton.setTitleColor(.white, for: .normal)
+        
+        pulseButton.layer.borderColor = UIColor.gray.cgColor
+        pulseButton.setTitleColor(.black, for: .normal)
+    }
+    
 }

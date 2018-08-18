@@ -49,13 +49,13 @@ class Soundscape {
     }
     
     func randomAmp() -> AKOperation {
-        let lfo = AKOperation.randomVertexPulse(minimum: 0, maximum: 0.5, updateFrequency: randomFloat())
+        let lfo = AKOperation.randomVertexPulse(minimum: 0, maximum: 0.4, updateFrequency: randomFloat())
         return lfo
     }
     
     func changeAmpTypeSmooth(freqs: [Double], mixer: AKMixer){
         for i in 0..<partials.count{
-            let lfo = AKOperation.randomVertexPulse(minimum: 0, maximum: 0.5, updateFrequency: randomFloat())
+            let lfo = AKOperation.randomVertexPulse(minimum: 0, maximum: 0.4, updateFrequency: randomFloat())
             
             
             partials[i].stop()
@@ -70,8 +70,10 @@ class Soundscape {
     }
     
     func changeAmpTypePulse(freqs: [Double], mixer: AKMixer){
+
         for i in 0..<partials.count {
-            let lfo = AKOperation.randomNumberPulse(minimum: 0, maximum: 0.5, updateFrequency: randomFloat())
+
+            let lfo = AKOperation.randomNumberPulse(minimum: 0, maximum: 0.4, updateFrequency: randomFloat())
             
             partials[i].stop()
             partials[i].detach()
@@ -82,6 +84,9 @@ class Soundscape {
             partials[i] >>> mixer
             partials[i].start()
         }
+        
+        print("soundscape done")
+
     }
     
     func changeAmpTypeMixed(freqs: [Double], mixer: AKMixer){
@@ -89,9 +94,9 @@ class Soundscape {
             
             var lfo: AKOperation?
             if(random(in: 0...1)>0.5){
-                lfo = AKOperation.randomNumberPulse(minimum: 0, maximum: 0.5, updateFrequency: randomFloat())
+                lfo = AKOperation.randomNumberPulse(minimum: 0, maximum: 0.4, updateFrequency: randomFloat())
             }else{
-                lfo = AKOperation.randomNumberPulse(minimum: 0, maximum: 0.5, updateFrequency: randomFloat())
+                lfo = AKOperation.randomNumberPulse(minimum: 0, maximum: 0.4, updateFrequency: randomFloat())
             }
             
             partials[i].stop()
