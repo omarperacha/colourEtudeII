@@ -113,4 +113,11 @@ class Soundscape {
     func normaliser(freq: Double) -> Double{
         return (4000-freq)/4000
     }
+    
+    func deallocPartials(){
+        for i in self.partials{
+            i.detach()
+        }
+        self.partials.removeAll()
+    }
 }

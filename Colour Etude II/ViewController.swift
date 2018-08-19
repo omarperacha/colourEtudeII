@@ -36,13 +36,11 @@ class ViewController: UIViewController{
             do{
                 try AudioKit.stop()
             } catch {print("error")}
-            print("headphone plugged in")
             reset()
         case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
             do{
                 try AudioKit.stop()
             } catch {print("error")}
-            print("headphone pulled out")
             reset()
         default:
             break
@@ -560,12 +558,14 @@ class ViewController: UIViewController{
         cScape.stop()
         fScape.stop()
         
-        cScapeMix.detach()
-        fScapeMix.detach()
+        cScape.deallocPartials()
+        fScape.deallocPartials()
+        
+        cScape.setup(freqs: cFreqs)
+        fScape.setup(freqs: fFreqs)
         
         cScape.attachToMixer(mixer: cScapeMix)
         fScape.attachToMixer(mixer: fScapeMix)
-       
         
         //MARK - Re -Initialise Audiofiles cSampler//
         do {cC3 = try AKAudioFile(readFileName: "Toy Piano F+4 C3.aif")} catch {print("cC3 messed up")}
@@ -649,9 +649,13 @@ class ViewController: UIViewController{
         } catch{print("error")}
         
         //start soundscapes
-        cScape.start()
-        fScape.start()
-        
+        if mixedGlobal{
+            makeMixed()
+        }else if pulsingGlobal{
+            makePulsing()
+        }else{
+            cScape.start()
+            fScape.start()}
         rev.start()
         
         if fState == 1{

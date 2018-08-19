@@ -919,7 +919,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcO-Jt-SIM">
-                                <rect key="frame" x="107" y="171" width="60" height="33.5"/>
+                                <rect key="frame" x="107" y="173" width="60" height="33.5"/>
                                 <color key="backgroundColor" red="0.56426155567169189" green="0.47336125373840332" blue="0.58070451021194458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Smooth"/>
                                 <constraints>
@@ -959,7 +959,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKO-mI-aSa">
-                                <rect key="frame" x="402" y="171" width="60" height="33"/>
+                                <rect key="frame" x="402" y="173" width="60" height="33"/>
                                 <color key="backgroundColor" red="0.56426155567169189" green="0.47336125373840332" blue="0.58070451021194458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IKO-mI-aSa" secondAttribute="height" multiplier="9:5" id="9jg-HJ-xqe"/>
@@ -973,7 +973,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBv-wF-gI4">
-                                <rect key="frame" x="254.5" y="171" width="60" height="33"/>
+                                <rect key="frame" x="254.5" y="173" width="60" height="33"/>
                                 <color key="backgroundColor" red="0.56426155567169189" green="0.47336125373840332" blue="0.58070451021194458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iBv-wF-gI4" secondAttribute="height" multiplier="9:5" id="cST-Kh-gl9"/>
@@ -1045,7 +1045,7 @@
                             <constraint firstItem="CcO-Jt-SIM" firstAttribute="width" secondItem="IKO-mI-aSa" secondAttribute="width" id="4bm-JS-JKe"/>
                             <constraint firstItem="n6g-v3-cuA" firstAttribute="top" secondItem="JBo-lJ-Efo" secondAttribute="bottom" id="6b1-E7-Oqe"/>
                             <constraint firstItem="SFb-Te-kfP" firstAttribute="centerX" secondItem="n6g-v3-cuA" secondAttribute="centerX" id="6xQ-6G-uvS"/>
-                            <constraint firstItem="iBv-wF-gI4" firstAttribute="top" secondItem="ysF-I7-HZM" secondAttribute="bottom" constant="5" id="7gi-pv-fpa"/>
+                            <constraint firstItem="iBv-wF-gI4" firstAttribute="top" secondItem="ysF-I7-HZM" secondAttribute="bottom" constant="7" id="7gi-pv-fpa"/>
                             <constraint firstItem="GR8-Ib-PXM" firstAttribute="width" secondItem="iKv-XE-i7h" secondAttribute="width" multiplier="25:667" constant="13.737631184407796" id="8HM-oj-cee"/>
                             <constraint firstItem="JBo-lJ-Efo" firstAttribute="trailing" secondItem="iKv-XE-i7h" secondAttribute="trailing" id="9st-Na-LAp"/>
                             <constraint firstItem="JBo-lJ-Efo" firstAttribute="height" secondItem="iKv-XE-i7h" secondAttribute="height" multiplier="0.66" id="CUR-dq-QJW"/>
@@ -1070,7 +1070,7 @@
                             <constraint firstItem="iKv-XE-i7h" firstAttribute="top" secondItem="GR8-Ib-PXM" secondAttribute="top" constant="-10" id="hkO-a3-AKy"/>
                             <constraint firstItem="ysF-I7-HZM" firstAttribute="centerX" secondItem="iBv-wF-gI4" secondAttribute="centerX" id="k2d-Lo-4SG"/>
                             <constraint firstItem="CcO-Jt-SIM" firstAttribute="width" secondItem="iBv-wF-gI4" secondAttribute="width" id="kwr-p3-LP7"/>
-                            <constraint firstItem="CcO-Jt-SIM" firstAttribute="top" secondItem="625-b8-kh1" secondAttribute="bottom" constant="45" id="lYJ-zS-WxQ"/>
+                            <constraint firstItem="CcO-Jt-SIM" firstAttribute="top" secondItem="625-b8-kh1" secondAttribute="bottom" constant="47" id="lYJ-zS-WxQ"/>
                             <constraint firstItem="625-b8-kh1" firstAttribute="top" secondItem="9Dx-ZE-Xaz" secondAttribute="bottom" constant="8.5" id="nCY-xX-nC8"/>
                             <constraint firstItem="SFb-Te-kfP" firstAttribute="top" secondItem="n6g-v3-cuA" secondAttribute="bottom" constant="8.5" id="oL6-CP-ajm"/>
                             <constraint firstItem="iKv-XE-i7h" firstAttribute="top" secondItem="UOz-r1-uYI" secondAttribute="top" id="rpC-QN-yl5"/>

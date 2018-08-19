@@ -34,17 +34,22 @@ class VolumeViewController: UIViewController {
         
         self.smoothButton.layer.cornerRadius = 5
         self.smoothButton.layer.borderWidth = 1
+        if smoothGloabal{
         self.smoothButton.layer.borderColor = UIColor.white.cgColor
-        smoothButton.setTitleColor(.white, for: .normal)
+            smoothButton.setTitleColor(.white, for: .normal)}else{self.smoothButton.layer.borderColor = UIColor.gray.cgColor}
 
         
         self.pulseButton.layer.cornerRadius = 5
         self.pulseButton.layer.borderWidth = 1
-        self.pulseButton.layer.borderColor = UIColor.gray.cgColor
+        if pulsingGlobal{
+            self.pulseButton.layer.borderColor = UIColor.white.cgColor
+            pulseButton.setTitleColor(.white, for: .normal)}else{self.pulseButton.layer.borderColor = UIColor.gray.cgColor}
         
         self.mixButton.layer.cornerRadius = 5
         self.mixButton.layer.borderWidth = 1
-        self.mixButton.layer.borderColor = UIColor.gray.cgColor
+        if mixedGlobal{
+            self.mixButton.layer.borderColor = UIColor.white.cgColor
+            mixButton.setTitleColor(.white, for: .normal)}else{self.mixButton.layer.borderColor = UIColor.gray.cgColor}
     }
     
     @IBAction func dismiss(_ sender: Any) {
@@ -83,7 +88,10 @@ class VolumeViewController: UIViewController {
         
         pulseButton.layer.borderColor = UIColor.gray.cgColor
         pulseButton.setTitleColor(.black, for: .normal)
-
+        
+        smoothGloabal = true
+        mixedGlobal = false
+        pulsingGlobal = false
 
     }
     
@@ -98,6 +106,10 @@ class VolumeViewController: UIViewController {
         
         pulseButton.layer.borderColor = UIColor.white.cgColor
         pulseButton.setTitleColor(.white, for: .normal)
+        
+        smoothGloabal = false
+        mixedGlobal = false
+        pulsingGlobal = true
     }
     
     @IBAction func makeMix(_ sender: Any) {
@@ -111,6 +123,10 @@ class VolumeViewController: UIViewController {
         
         pulseButton.layer.borderColor = UIColor.gray.cgColor
         pulseButton.setTitleColor(.black, for: .normal)
+        
+        smoothGloabal = false
+        mixedGlobal = true
+        pulsingGlobal = false
     }
     
 }
